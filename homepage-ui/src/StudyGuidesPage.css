@@ -1,0 +1,42 @@
+.study-guides-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6fa;
+}
+
+.study-guides-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.study-guides-content h1 {
+  color: #1abc9c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.materials-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .study-guides-content {
+    margin: 1rem auto;
+  }
+
+  .study-guides-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .materials-display {
+    gap: 1rem;
+  }
+} 

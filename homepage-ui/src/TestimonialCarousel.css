@@ -1,0 +1,117 @@
+/* Testimonial Carousel Styles */
+.tc-carousel-outer {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  padding: 2rem 0;
+}
+.tc-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  min-height: 220px;
+  padding: 1.5rem 2rem;
+  gap: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+.tc-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  background: #f5f6fa;
+}
+.tc-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tc-stars {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.tc-star {
+  color: #FFD700;
+  margin-right: 2px;
+}
+.tc-star-empty {
+  color: #e0e0e0;
+}
+.tc-text {
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.tc-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.tc-role {
+  font-size: 0.97rem;
+  color: #888;
+}
+.tc-arrow {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: #1abc9c;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+  z-index: 2;
+  user-select: none;
+}
+.tc-arrow:hover, .tc-arrow:focus {
+  background: #e8f8f5;
+  color: #159c86;
+}
+.tc-arrow:active {
+  background: #b2f1e2;
+}
+.tc-arrow-left {
+  margin-right: 0.5rem;
+}
+.tc-arrow-right {
+  margin-left: 0.5rem;
+}
+@media (max-width: 700px) {
+  .tc-card {
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 520px) {
+  .tc-card {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: unset;
+    padding: 1rem 0.5rem;
+    gap: 0.7rem;
+  }
+  .tc-img {
+    width: 90px;
+    height: 90px;
+  }
+  .tc-content {
+    width: 100%;
+  }
+  .tc-carousel-outer {
+    padding: 1rem 0 1.5rem 0;
+  }
+} 

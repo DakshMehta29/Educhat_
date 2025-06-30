@@ -1,0 +1,245 @@
+/* Flashcards Page Styles */
+.flashcards-page {
+  min-height: 100vh;
+  background: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+.flashcards-content {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 800px; /* Keep max-width for centering */
+  margin: 0 auto; /* Center the content */
+  padding: 2.5rem 1.5rem; /* Increased overall padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Increased gap between sections */
+}
+.flashcards-header {
+  background: #fff;
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(26,188,156,0.15); /* Enhanced shadow */
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem; /* Increased padding */
+  margin: 0; /* Removed margin */
+  text-align: center;
+  max-width: 550px; /* Slightly wider header */
+  width: 100%;
+}
+.flashcards-header h1 {
+  color: #1abc9c;
+  font-size: 2.5rem; /* Larger font */
+  font-weight: 800;
+  margin-bottom: 0.8rem; /* Increased margin */
+}
+.flashcards-header p {
+  color: #444;
+  font-size: 1.18rem; /* Larger font */
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+.flashcards-form {
+  display: flex;
+  gap: 1.5rem; /* Increased gap */
+  margin-bottom: 0; /* Removed margin */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flashcards-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; /* Increased gap for arrows */
+  margin-bottom: 1rem; /* Removed margin */
+  width: 100%; /* Ensure carousel takes full width of its container */
+  position: relative;
+}
+.flashcards-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.fc-progress {
+  color: #1abc9c;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background: #e8f8f5;
+  border: 1.5px solid #1abc9c;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgba(26,188,156,0.09);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.fc-btn {
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(26,188,156,0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.fc-btn:hover, .fc-btn:focus {
+  background: #159c86;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.fc-btn.shuffle, .fc-btn.reset {
+  border-radius: 25px;
+  width: auto;
+  height: 48px;
+  padding: 0 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(26,188,156,0.1);
+}
+.fc-btn.shuffle:hover, .fc-btn.shuffle:focus,
+.fc-btn.reset:hover, .fc-btn.reset:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26,188,156,0.15);
+}
+.fc-btn.reset {
+  background: #fff;
+  color: #1abc9c;
+  border: 2px solid #1abc9c;
+}
+.fc-btn.reset:hover, .fc-btn.reset:focus {
+  background: #e8f8f5;
+  color: #159c86;
+}
+/* New container for Shuffle and Reset buttons */
+.fc-control-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.fc-mascot {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #e8f8f5;
+  box-shadow: 0 4px 15px rgba(26,188,156,0.1);
+}
+.fc-empty {
+  min-width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.2rem;
+  background: #fffbe7;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(26,188,156,0.18);
+  padding: 1.5rem;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+.fc-empty::before {
+  content: '😔';
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+.fc-tip {
+  margin: 2rem auto;
+  background: #e8f8f5;
+  color: #159c86;
+  font-size: 1.1rem;
+  border-radius: 18px;
+  padding: 0.8rem 1.5rem;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(26,188,156,0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-left: 6px solid #1abc9c;
+}
+.fc-tip-icon {
+  animation: pulse 1.5s infinite ease-in-out;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@media (max-width: 768px) {
+  .flashcards-content {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  .flashcards-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    max-width: 98vw;
+  }
+  .flashcards-carousel {
+    gap: 1.5rem;
+  }
+  .fc-progress {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .fc-mascot {
+    width: 60px;
+    height: 60px;
+  }
+  .fc-tip {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    max-width: 96vw;
+  }
+}
+@media (max-width: 480px) {
+  .flashcards-content {
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
+  .flashcards-header h1 {
+    font-size: 2rem;
+  }
+  .flashcards-header p {
+    font-size: 1.05rem;
+  }
+  .flashcards-carousel {
+    gap: 0.8rem;
+  }
+  .fc-progress {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .fc-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+  }
+  .fc-btn.shuffle, .fc-btn.reset {
+    height: 36px;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  .fc-tip {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+} 

@@ -1,0 +1,94 @@
+.my-bookings {
+    /* Styles for the my bookings container */
+}
+
+.my-bookings h3 {
+    color: #1abc9c;
+    margin-bottom: 1rem;
+}
+
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.booking-item {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(26,188,156,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.booking-item .booking-status {
+    font-weight: 600;
+}
+
+.booking-item .booking-status.upcoming {
+    color: #1abc9c;
+}
+
+.booking-item .booking-status.completed {
+    color: #666;
+}
+
+.booking-item .booking-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.booking-item button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: fit-content;
+    font-size: 0.9rem;
+}
+
+.booking-item button:hover {
+    background: #ff4f4f;
+}
+
+.booking-item .join-meeting-btn {
+     background: #1abc9c;
+}
+
+.booking-item .join-meeting-btn:hover {
+     background: #16a085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .booking-item {
+        padding: 0.8rem;
+    }
+
+    .booking-item p {
+        font-size: 0.9rem;
+    }
+
+    .booking-item .booking-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .booking-item button {
+        width: 100%;
+        text-align: center;
+    }
+} 

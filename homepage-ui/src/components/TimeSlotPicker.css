@@ -1,0 +1,88 @@
+.time-slot-picker {
+    /* Styles for the time slot picker container */
+}
+
+.time-slot-picker h3 {
+    color: #1abc9c;
+    margin-bottom: 1rem;
+}
+
+.time-slot-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Increased gap for better spacing */
+}
+
+.time-slot-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(26,188,156,0.05);
+    transition: transform 0.3s ease;
+    flex: 1 1 280px; /* Allow cards to grow but have a base width */
+}
+
+.time-slot-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(26,188,156,0.08);
+}
+
+.time-slot-card .slot-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.time-slot-card .slot-time {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.time-slot-card .slot-mentor {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.time-slot-card .book-now-btn {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.time-slot-card .book-now-btn:hover {
+    background: #16a085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .time-slot-list {
+        gap: 0.8rem;
+    }
+
+    .time-slot-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 0.8rem;
+        flex: 1 1 100%;
+    }
+
+    .time-slot-card .book-now-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }
+} 

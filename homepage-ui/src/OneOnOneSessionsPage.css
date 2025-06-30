@@ -1,0 +1,276 @@
+.one-on-one-sessions-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6fa;
+}
+
+.one-on-one-sessions-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.one-on-one-sessions-content h1 {
+  color: #1abc9c;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.benefits-section,
+.filters-section,
+.mentors-section,
+.time-slots-section,
+.my-bookings-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(26,188,156,0.08);
+}
+
+.benefits-section h2,
+.filters-section h2,
+.mentors-section h2,
+.time-slots-section h2,
+.my-bookings-section h2 {
+  color: #1abc9c;
+  margin-bottom: 1rem;
+}
+
+.benefits-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.benefits-section li {
+  background: #e8f8f5;
+  color: #16a085;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  flex: 1 1 250px; /* Allow items to grow but have a base width */
+}
+
+.filters-section {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters-section .filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filters-section label {
+   color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.filters-section select,
+.filters-section input[type="date"] {
+  padding: 0.8rem;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters-section select:focus,
+.filters-section input[type="date"]:focus {
+    outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 3px rgba(26,188,156,0.1);
+}
+
+.mentors-section .mentor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.mentor-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    background: #fff;
+     box-shadow: 0 2px 10px rgba(26,188,156,0.05);
+    transition: transform 0.3s ease;
+}
+
+.mentor-card:hover {
+    transform: translateY(-3px);
+     box-shadow: 0 4px 12px rgba(26,188,156,0.08);
+}
+
+.mentor-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1abc9c;
+}
+
+.mentor-card h3 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.mentor-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.2rem 0;
+}
+
+.time-slots-section .time-slot-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.time-slot-btn {
+  background: #e8f8f5;
+  color: #1abc9c;
+  border: 1.5px solid #1abc9c;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-slot-btn:hover {
+  background: #1abc9c;
+  color: white;
+  box-shadow: 0 2px 8px rgba(26,188,156,0.2);
+}
+
+.my-bookings-section .booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.booking-item {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(26,188,156,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.booking-item button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+
+.booking-item button:hover {
+    background: #ff4f4f;
+}
+
+.booking-item button:last-child {
+     background: #1abc9c;
+}
+
+.booking-item button:last-child:hover {
+     background: #16a085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .one-on-one-sessions-content {
+    margin: 1rem auto;
+    gap: 1.5rem;
+  }
+
+  .one-on-one-sessions-content h1 {
+    font-size: 2rem;
+  }
+
+  .benefits-section,
+  .filters-section,
+  .mentors-section,
+  .time-slots-section,
+  .my-bookings-section {
+    padding: 1rem;
+  }
+
+   .benefits-section li {
+      flex: 1 1 100%;
+   }
+
+  .filters-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+   .filters-section .filter-group {
+      width: 100%;
+   }
+
+    .mentors-section .mentor-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .mentor-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .time-slots-section .time-slot-list {
+        gap: 0.5rem;
+    }
+
+    .time-slot-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+     .booking-item {
+        padding: 0.8rem;
+     }
+
+     .booking-item p {
+        font-size: 0.9rem;
+     }
+} 

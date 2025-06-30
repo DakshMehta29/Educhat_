@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.section-dark {
+  background-color: #111;
+  color: white;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.section-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.section-text {
+  flex: 1;
+}
+
+.learn-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

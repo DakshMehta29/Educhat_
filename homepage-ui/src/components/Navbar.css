@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); /* Stylish font */
+
+.navbar {
+  background-color: #fff;
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  border-bottom: 1.5px solid #e8f8f5;
+  min-height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.logo img {
+  height: 44px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #1abc9c;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.custom-btn {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #1abc9c;
+  background-color: transparent;
+  color: #1abc9c;
+  font-weight: 600;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.custom-btn:hover {
+  background-color: #1abc9c;
+  color: #fff;
+  border-color: #1abc9c;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  .navbar {
+    padding: 0.7rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: unset;
+    padding: 0.5rem 0.2rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .nav-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
