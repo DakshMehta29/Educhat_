@@ -113,8 +113,16 @@ Screenshot1(https://github.com/user-attachments/assets/1a67d792-9361-432d-871c-0
 
 Pull requests are welcome! For major changes, please open an issue first.
 
+
 ---
 
 ## 📃 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
+
+## ✍️ Author
+
+Made with ❤️ by Daksh Mehta
+📬 Email: dakshmehta2965@gmail.com
+🔗 Portfolio (Coming soon)
+🔗 LinkedIn: https://www.linkedin.com/in/dakshmehta29/
