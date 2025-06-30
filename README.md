@@ -105,7 +105,20 @@ OpenAI/Gemini compatible with minor config changes.
 
 ## 📸 Screenshots
 
-Screenshot1(https://github.com/user-attachments/assets/1a67d792-9361-432d-871c-0ab32cfc66f0)
+### 🏠 Homepage
+![Homepage](https://raw.githubusercontent.com/DakshMehta29/Educhat_/main/UI%20screenshots/Homepage.png)
+
+### 🤖 AI Chat Support
+![AI Chat Support](https://raw.githubusercontent.com/DakshMehta29/Educhat_/main/UI%20screenshots/AI_chatSupport.png)
+
+### 🧠 Flashcards
+![Flashcards](https://raw.githubusercontent.com/DakshMehta29/Educhat_/main/UI%20screenshots/Flashcards.png)
+
+### 📘 Study Guides
+![Study Guides](https://raw.githubusercontent.com/DakshMehta29/Educhat_/main/UI%20screenshots/Study_Guides.png)
+
+### 🎥 One-on-One Session Booking
+![One-on-One Session Booking](https://raw.githubusercontent.com/DakshMehta29/Educhat_/main/UI%20screenshots/One-on-One_Sessionbooking.png)
 
 ---
 
