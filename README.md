@@ -105,7 +105,7 @@ OpenAI/Gemini compatible with minor config changes.
 
 ## 📸 Screenshots
 
-Include UI screenshots from your uploads here.
+Screenshot1(https://github.com/user-attachments/assets/1a67d792-9361-432d-871c-0ab32cfc66f0)
 
 ---
 
